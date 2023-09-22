@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Encode-Sans-Bold';
+    src:url('../Assets/fonts/Encode-Sans-Bold/Encode-Sans-Bold.ttf.woff') format('woff'),
+        url('../Assets/fonts/Encode-Sans-Bold/Encode-Sans-Bold.ttf.svg#Encode-Sans-Bold') format('svg'),
+        url('../Assets/fonts/Encode-Sans-Bold/Encode-Sans-Bold.ttf.eot'),
+        url('../Assets/fonts/Encode-Sans-Bold/Encode-Sans-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'coben';
+    src: url('../Assets/fonts/coben/Coben Bold.otf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: coben;
+}
+
+body{
+    width: 100vw;
+    height: 100vh !important;
+    background-color: #c8c6c6;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+main.menuContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Menu Lateral */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 100vh;
+    background-color:rgb(14, 106, 211);
+    transition: all 1s ease;
+    overflow-x: hidden;
+    transition: width 0.5s;
+}
+
+.close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(14, 106, 211);
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height:50px;
+    border-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+.close:hover{
+    background-color:rgb(35, 137, 253);
+}
+
+.menu.hidden{
+    width: 0;
+    overflow: hidden;
+}
+
+.opcion:hover{
+    background-color: #def9f7;
+}
+
+.pantalla{
+    display: flex;
+    width: 100%;
+}
+
+.opcion{
+    margin-top:30px ;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 2px;   
+    padding: 10px;
+    color: white;
+}
+
+.opcion:hover{
+    margin-top:30px ;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+/* Titulo */
+
+.title{
+    width: 300px;
+    color: white;
+    background-color:rgb(35, 137, 253);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+/* Input Busqueda */
+
+.searchInput{
+    width: 90%;
+    margin: auto;
+    color: #000;
+    background-color:#c8c6c6;
+    border: transparent;
+    box-shadow: inset 11px 15px 15px -3px rgba(104, 103, 103, 0.1);
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+.searchInput::placeholder{
+    color: rgb(57, 57, 57);
+}
+
+.searchInput:focus{
+    border: transparent;
+}
+
+.cont{
+    width: 100%;
+    height:100vh;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.tab{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.options{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding-bottom:25px;
+}
+
+.crearBtn{
+    margin: auto;
+    height: 35px;
+    width: 80px;
+    background-color: #111827;
+    border: transparent;
+    border-radius: .75rem;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    transition-duration: .2s;
+}
+
+.crearBtn:hover{
+    background-color: #374151;
+    color: white;
+}
+
+.crearBtn:focus{
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.menuTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .menuTable th {
+    background-color:rgb(14, 106, 211);
+    border: 1px solid #c8c6c6;
+    color: white;
+    padding: 8px;
+  }
+  
+  .menuTable tr {
+    border: 1px solid #c8c6c6;
+    
+  }
+  
+  .menuTable td {
+    border: 1px solid #c8c6c6;
+  }
+  
+  .menuTable div {
+    cursor: pointer;
+    padding: 3px;
+    position: relative;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    width: 20px;
+}
+.edit{
+    background-color: rgb(0, 140, 255);
+
+}
+.delete{
+    background-color: rgb(255, 0, 0);
+
+}
+.menuContainer div p{
+    font-size: 1.2rem;
+}
+
+

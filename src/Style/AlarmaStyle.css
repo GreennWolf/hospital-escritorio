@@ -1,0 +1,53 @@
+.alarmaAreasContainer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); /* Ajusta el ancho máximo de las columnas */
+    grid-auto-rows: 200px; /* Ajusta la altura de las filas */
+    gap: 10px; /* Espacio entre elementos */
+    grid-auto-flow: dense; /* Permite que los elementos fluyan automáticamente a la siguiente fila/columna */
+}
+
+.alarmaAreaBtn{
+    width: 110px;
+    height: 100px;
+    background-color: rgb(35, 137, 253);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 1.2rem;
+}
+
+.alarmaAreaBtn:hover{
+    background-color: rgb(56, 56, 163);
+}
+
+.alarm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80px;
+    width: 100%;
+    height:100vh;
+    background-color:blue;
+    padding: 10px;
+    border-radius: 7px;
+    color: #ffffff;
+    animation: alarm infinite 0.5s;
+
+}
+@keyframes alarm{
+    0%{
+        background-color:blue ;
+    }
+
+    50%{
+        background-color:red;
+    }
+
+    100%{
+        background-color: blue;
+    }
+}
